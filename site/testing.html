@@ -3,35 +3,49 @@
 <head>
 	<title>Testing Position</title>
 	<style type="text/css">
-		#1, #2, #3, #4 {
+		* {
+			margin: 0;
+		}	
+
+		#a, #b, #c, #d {
 			width: 50px;
 			height: 50px;
+			margin-bottom: 15px;
 		}
 
-		#1 {
+		#a {
 			background-color: red;
+			float: right;
 		}
 
-		#2 {
+		#b {
 			background-color: blue;
+			clear: right;
+			position: relative;
+			top: 5px;
+			left: 5px;
 		}
 
-		#3 {
+		#c {
 			background-color: green;
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
 		}
 
-		#4 {
+		#d {
 			background-color: yellow;
 		}
 
 	</style>
 </head>
 <body>
-	<div>
-		<div id="1"></div>
-		<div id="2"></div>
-		<div id="3"></div>
-		<div id="4"></div>
+	<h1>This is testing the position</h1>
+	<div style="background-color: cyan; position: relative;">
+		<div id="a"></div>
+		<div id="b"></div>
+		<div id="c"></div>
+		<div id="d"></div>
 	</div>
 </body>
 </html>
